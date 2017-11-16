@@ -1,0 +1,17 @@
+<?DOCTYPE html>
+<html>
+  <head>
+    <title>MY page</title>
+  </head>
+
+  <body>
+    <h1>My favourites websites</h1>
+    <ul>
+      <% @fav_links.each do |websites,link| %>
+        <li> <a href='<%=link%>'> <%= websites %> </a></li>
+
+      <% end %>
+    </ul>
+
+  </body>
+</html>
